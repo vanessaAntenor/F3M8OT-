@@ -1,0 +1,183 @@
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Verdana;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: navy;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 13px 20px;
+    font-size: 17px;
+    width: 14.28%;
+
+}
+
+.tablink:hover {
+    background-color:#e6e6fa;
+    color: black
+}
+
+
+.dropbtn {
+    background-color: #000080;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #000080;
+    min-width: 160px;
+    width: 14.28%;
+
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #aec0ef; color:black}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #b8c4f7;
+color:black}
+
+
+body, head {
+    /* The image used */
+    background-image: url("http://cdn.wonderfulengineering.com/wp-content/uploads/2016/02/blue-wallpaper-9.jpg");
+
+    /* Full height */
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: ;
+    display: none;
+    padding: 50px 20px;
+    height: 100%;
+}
+
+
+
+#Home{
+    height: 160%;
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 20s ease infinite;
+  }
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%}
+
+  }
+#About
+{   height:200%;
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+}
+
+#PrimaryDomainQuiz
+{   height:185%;
+    align:center;
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+    }
+#WomenInTech{
+    height: 430%;
+    color:navy;
+    background: linear-gradient(132deg,	#d4f0fc, #F0F8FF,	#02a9f7, #1E90FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%}
+
+  }
+#InspirationalQuotes{
+    height:150%;
+    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%}
+
+  }
+#Entertainment{
+    height:250%;
+    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%}
+
+  }
+
+#Contact
+{   height:100%;
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+}
+
+  #titttle{font-family: ALGERIAN; color: navy; font-size: 2.25em; align: center }
+
+  #par{font-family:Comic; color:navy; font-size: 1.5em}
+
+  #pur{font-family: ALGERIAN; color: navy; font-size: 1.75em}
+
+
+#womtab {
+    align: center;
+    width: 100%
+}
