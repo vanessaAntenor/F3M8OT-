@@ -85,7 +85,7 @@ body, head {
 
 
 #Home{
-    height: 160%;
+    height: 170%;
     background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF);
     background-size: 400% 400%;
     animation: backgroundG 20s ease infinite;
@@ -98,7 +98,7 @@ body, head {
   }
 #About
 {   height:200%;
-    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
   }
@@ -111,7 +111,7 @@ body, head {
 #PrimaryDomainQuiz
 {   height:185%;
     align:center;
-    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
   }
@@ -123,7 +123,7 @@ body, head {
 #WomenInTech{
     height: 430%;
     color:navy;
-    background: linear-gradient(132deg,	#d4f0fc, #F0F8FF,	#02a9f7, #1E90FF, );
+    background: linear-gradient(132deg,	#d4f0fc, #F0F8FF,	#02a9f7, #1E90FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
   }
@@ -135,7 +135,7 @@ body, head {
   }
 #InspirationalQuotes{
     height:150%;
-    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF, );
+    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
   }
@@ -147,7 +147,7 @@ body, head {
   }
 #Entertainment{
     height:250%;
-    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF, );
+    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
   }
@@ -160,7 +160,7 @@ body, head {
 
 #Contact
 {   height:100%;
-    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
   }
@@ -170,7 +170,7 @@ body, head {
       50% {background-position: 100% 50%;}
 }
 
-  #titttle{font-family: ALGERIAN; color: navy; font-size: 2.25em; align: center }
+  #titttle{font-family: ALGERIAN; color: navy; font-size: 2.25em; align: center}
 
   #par{font-family:Comic; color:navy; font-size: 1.5em}
 
@@ -181,3 +181,4 @@ body, head {
     align: center;
     width: 100%
 }
+
