@@ -86,7 +86,7 @@ body, head {
 
 #Home{
     height: 160%;
-    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF, );
+    background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF);
     background-size: 400% 400%;
     animation: backgroundG 20s ease infinite;
   }
