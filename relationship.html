@@ -1,0 +1,215 @@
+<HTML>
+<HEAD>
+<meta charset="tuf-8">
+<meta http-equiv="Conten-Type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src+"https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<TITLE>Are you a relationship builder?</TITLE>
+<script language="javascript">
+
+var Quest = new Array(15);  //this sets up an array for all of the answers that are given
+
+function populate() {
+// alert("function populate started");
+// this function gives each of the answers 0 points so if someone doesn't answer a question
+// the whole thing will continue to work
+  for(var i=0; i<15; i++) { Quest[i]=0; }
+}
+
+function total() {
+// alert("function total started");
+// this function adds the number of points each answer is worth together
+  myScore=0;
+  for (var i=0; i<15; i++) { myScore=myScore+Quest[i]; }
+  analyzer(myScore);
+}
+myContents = new Array();
+myContents[0] = "Relatioonship Builder is not your primary domain AT ALL. Please take the other quizzes to find your real primary domain";
+myContents[1] = "Relatioonship Builder is not your primary domain. Please take the other quizzes to find your real primary domain";
+myContents[2] = "One of your primary domain Relatioonship Builder. You have an innate ability to take the human component into the equation. You look at how individuals fit into the bigger pictures, and can create pathways for them to thrive. You make strong relational connections that bind a group together around a cause, idea or each other.";
+myContents[3] = "You might have only one of the Relatioonship Building Themes. Please take the other quizzes to find your real primary domain";
+myContents[4] = "Please, reply the question mostly by yes or no, and less by neutral answer as: I do not know or maybe.";
+myContents[5] = "Please retake the test and think more about the questions. "
+
+function analyzer (myScore) {
+// this function uses the total calculated score to figure out which personality type they are
+  console.log(myScore)
+  if (93>=myScore && myScore>81) { myContentsPtr = 0; }
+  else { if (80>=myScore && myScore>71) { myContentsPtr = 1; }
+    else { if(70>=myScore && myScore>51)  { myContentsPtr = 2; }
+      else { if(50>=myScore && myScore>31) { myContentsPtr = 3; }
+        else { if(30>=myScore && myScore>11) { myContentsPtr = 4; }
+          else { myContentsPtr = 5; }
+        }
+      }
+    }
+  }
+  myDisplay(myContents[myContentsPtr])
+}
+
+function myDisplay(myContents) {
+//This function will open a new window and show the results calculated
+  alert(myContents);
+}
+
+function saver(q, points) {
+// this function puts the points that each answer is worth into the array
+  q=q-1;
+  Quest[q]=points
+}
+
+</script>
+<style type="text/css">
+.style1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000080;
+}
+  .style2 {font-family: Arial, Helvetica, sans-serif}
+  .style3 {color:navy; font-weight: bold;}
+  .style5 {color: #00FF00}
+  .style6 {color:#4169E1}
+  .style11 {color: #80FFFF}
+
+  body {
+    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%}
+
+  }
+</style>
+</HEAD>
+
+<BODY onLoad="populate()">
+<FORM NAME="personalityForm">
+<span class="style1">Are you a relationship builder?</span><br>
+<br>
+
+<span class="style2">
+
+<span class="style3">1. Do you always plan your life? Or do you live in the present (go with the flow)?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q1" onClick="saver(1,6)">Plan life<br>
+<INPUT TYPE="RADIO" NAME="q1" onClick="saver(1,4)">Live in the present<br>
+  <INPUT TYPE="RADIO" NAME="q1" onClick="saver(1,0)">I don't Know<br>
+</span><br>
+
+<span class="style3">2. Do you mostly believe in coincidence? Or do you believe that every thing happens for a reason?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q2" onClick="saver(2,6)" >Coincidence<br>
+<INPUT TYPE="RADIO" NAME="q2" onClick="saver(2,4)">Every thing happens for a reason<br>
+<INPUT TYPE="RADIO" NAME="q2" onClick="saver(2,0)">I don't know.<br>
+</span><br>
+
+<span class="style3">3. Can you put yourself in people's situation?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q3" onClick="saver(3,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q3" onClick="saver(3,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(3,2)">Sometimes<br>
+<INPUT TYPE="RADIO" NAME="q3" onClick="saver(3,0)">I don't know<br>
+</span><br>
+
+<span class="style3">4. Do you usually think about how other people might feel about your behavior?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q4" onClick="saver(4,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q4" onClick="saver(4,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q4" onClick="saver(4,0)">I don't know<br>
+</span><br>
+
+<span class="style3">5. Are you a friendly person?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q5" onClick="saver(5,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q5" onClick="saver(5,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q5" onClick="saver(5,0)">I don't know<br>
+</span><br>
+
+<span class="style3">6. Do you usually think that people who are different can productively work together?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q6" onClick="saver(6,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q6" onClick="saver(6,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q6" onClick="saver(6,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>7.Do you like to work with your friends, or in groups?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(7,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(7,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(7,2)">Sometimes<br>
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(7,1)">I don't know<br>
+</span><br>
+
+<span class="style3">8. Do you usually respect other people's perpectives?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q8" onClick="saver(8,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q8" onClick="saver(8,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q8" onClick="saver(8,1)">I don't know<br>
+</span><br>
+
+<span class="style3">9. Are you mostly and easily proud of improvements? even it's just a small improvement?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q9" onClick="saver(9,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q9" onClick="saver(9,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(9,3)">Sometimes<br>
+<INPUT TYPE="RADIO" NAME="q9" onClick="saver(9,1)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>10. If you had a plan, something happened, and the plan is about to get ruined. Do you...</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q10" onClick="saver(10,6)">Get mad and give up<br>
+<INPUT TYPE="RADIO" NAME="q10" onClick="saver(10,4)">Find a way to get through the situation.<br>
+<INPUT TYPE="RADIO" NAME="q10" onClick="saver(10,3)">Stay calm and do something else<br>
+<INPUT TYPE="RADIO" NAME="q10" onClick="saver(10,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>11. Do you usually make people having enthousiasm about what they are going to do?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(11,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(11,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(11,3)">Not really<br>
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(11,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>12. Do you usually enjoy having close relationship with others?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q12" onClick="saver(12,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q12" onClick="saver(12,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q12" onClick="saver(12,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>13. Do you mostly try to understand others' feelings or behaviors?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q13" onClick="saver(13,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q13" onClick="saver(13,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q13" onClick="saver(13,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>14. Do you mostly feel bad when someone is being left out?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,8)">Never<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,2)">Not Really<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>15. Can you describe yourself as a good listener?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q15" onClick="saver(15,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q15" onClick="saver(15,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q15" onClick="saver(15,0)">I don't know<br>
+</span><br>
+
+<br>
+<button class="tablink" onclick="openPag('Home', this, '#64B3EC')"><a href="nav.html">Go to initial page</a></button>
+<INPUT TYPE="button" NAME="result" Value="Click here to see your result" onClick="total()">
+<span>
+
+</FORM>
+</BODY>
+</HTML>

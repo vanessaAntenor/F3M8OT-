@@ -1,0 +1,214 @@
+<HTML>
+<HEAD>
+<meta charset="tuf-8">
+<meta http-equiv="Conten-Type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src+"https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<TITLE>Are you an executer?</TITLE>
+<script language="javascript">
+
+
+var Quest = new Array(15);  //this sets up an array for all of the answers that are given
+
+function populate() {
+// alert("function populate started");
+// this function gives each of the answers 0 points so if someone doesn't answer a question
+// the whole thing will continue to work
+  for(var i=0; i<15; i++) { Quest[i]=0; }
+}
+
+function total() {
+// alert("function total started");
+// this function adds the number of points each answer is worth together
+  myScore=0;
+  for (var i=0; i<15; i++) { myScore=myScore+Quest[i]; }
+  analyzer(myScore);
+}
+myContents = new Array();
+myContents[0] = "Doer is not your primary domain at all. Please take the other quizzes to find your real primary domain";
+myContents[1] = "Doer is not your primary domain. Please take the other quizzes to find your real primary domain";
+myContents[2] = "One of your primary domain is Doer. You tend to get things done, with speed, precision, and accuracy.. You put in the hard work now, so that when it is time to move, you are ready. Putting ideas into action is the strengths of this domain. You might as well take another quiz to see if you have another domain. Please check out the other quizzes.";
+myContents[3] = "You might have only one of the excuting themes. Please take the other quizzes to find your real primary domain";
+myContents[4] = "Please, reply the question mostly by yes or no, and less by neutral answer as: I do not know or maybe.";
+myContents[5] = "Please retake the test and think more about the questions. "
+
+function analyzer (myScore) {
+// this function uses the total calculated score to figure out which personality type they are
+  console.log(myScore)
+  if (93>=myScore && myScore>81) { myContentsPtr = 0; }
+  else { if (80>=myScore && myScore>71) { myContentsPtr = 1; }
+    else { if(70>=myScore && myScore>51)  { myContentsPtr = 2; }
+      else { if(50>=myScore && myScore>31) { myContentsPtr = 3; }
+        else { if(30>=myScore && myScore>11) { myContentsPtr = 4; }
+          else { myContentsPtr = 5; }
+        }
+      }
+    }
+  }
+  myDisplay(myContents[myContentsPtr])
+}
+
+function myDisplay(myContents) {
+//This function will open a new window and show the results calculated
+  alert(myContents);
+}
+
+function saver(q, points) {
+// this function puts the points that each answer is worth into the array
+  q=q-1;
+  Quest[q]=points
+}
+
+</script>
+<style type="text/css">
+.style1 {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #000080;
+}
+  .style2 {font-family: Arial, Helvetica, sans-serif}
+  .style3 {color:navy; font-weight: bold;}
+  .style5 {color: #00FF00}
+  .style6 {color:#4169E1}
+  .style11 {color: #80FFFF}
+
+  body {
+    background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF, );
+    background-size: 400% 400%;
+    animation: backgroundG 10s ease infinite;
+  }
+  @keyframes backgroundG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%}
+
+  }
+</style>
+</HEAD>
+
+<BODY onLoad="populate()">
+<FORM NAME="personalityForm">
+<span class="style1">Are you a doer?</span><br>
+<br>
+
+<span class="style2">
+
+<span class="style3">1. Are you a leader?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q1" onClick="saver(1,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q1" onClick="saver(1,4)">Yes<br>
+  <INPUT TYPE="RADIO" NAME="q1" onClick="saver(1,0)">I don't Know.<br>
+</span><br>
+
+<span class="style3">2. Do you like when everything is in order?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q2" onClick="saver(2,6)" >No<br>
+<INPUT TYPE="RADIO" NAME="q2" onClick="saver(2,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q2" onClick="saver(2,0)">I don't know.<br>
+</span><br>
+
+<span class="style3">3.Are you good at organizing?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q3" onClick="saver(3,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q3" onClick="saver(3,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q3" onClick="saver(3,0)">I don't know<br>
+</span><br>
+
+<span class="style3">4. Are you easily distracted?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q4" onClick="saver(4,6)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q4" onClick="saver(4,4)">No<br>
+<INPUT TYPE="RADIO" NAME="q4" onClick="saver(4,0)">I don't know<br>
+</span><br>
+
+<span class="style3">5. Do you have some core values that you are never going to change?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q5" onClick="saver(5,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q5" onClick="saver(5,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q5" onClick="saver(5,0)">I don't know<br>
+</span><br>
+
+<span class="style3">6. Do you always say the truth even though that might hurt someone?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q6" onClick="saver(6,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q6" onClick="saver(6,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q6" onClick="saver(6,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>7.Do you like to order people around?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(7,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(7,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q7" onClick="saver(7,1)">I don't know<br>
+</span><br>
+
+<span class="style3">8. Are you stubborn?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q8" onClick="saver(8,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q8" onClick="saver(8,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q8" onClick="saver(8,1)">I don't know<br>
+</span><br>
+
+<span class="style3">9. Do you like when you achieve your goals?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q9" onClick="saver(9,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q9" onClick="saver(9,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q9" onClick="saver(9,1)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>10. Do you always take your time to think before taking decisions?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q10" onClick="saver(10,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q10" onClick="saver(10,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q10" onClick="saver(10,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>11. Are you someone that is energectic?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(11,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(11,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q11" onClick="saver(11,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>12. Do you always treat people equal?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q12" onClick="saver(12,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q12" onClick="saver(12,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q12" onClick="saver(12,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>13. Are you always ready to solve a problem, wether they are your problems or your friends problems?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q13" onClick="saver(13,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q13" onClick="saver(13,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q13" onClick="saver(13,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>14. Do you always work hard on projects?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,8)">Never<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,2)">Not Really<br>
+<INPUT TYPE="RADIO" NAME="q14" onClick="saver(14,0)">I don't know<br>
+</span><br>
+
+<span class="style3"><br>15. Can you describe yourself as someone that is responsible?</span><br>
+<span class="style6">
+<INPUT TYPE="RADIO" NAME="q15" onClick="saver(15,6)">No<br>
+<INPUT TYPE="RADIO" NAME="q15" onClick="saver(15,4)">Yes<br>
+<INPUT TYPE="RADIO" NAME="q15" onClick="saver(15,0)">I don't know<br>
+</span><br>
+
+<br>
+<button class="tablink" onclick="openPag('Home', this, '#64B3EC')"><a href="nav.html">Go to initial page</a></button>
+<INPUT TYPE="button" NAME="result" Value="Click here to see your result" onClick="total()">
+<span>
+
+
+
+
+</FORM>
+</BODY>
+</HTML>
