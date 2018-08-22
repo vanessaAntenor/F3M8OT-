@@ -97,7 +97,7 @@ body, head {
 
   }
 #About
-{   height:200%;
+{   height:220%;
     background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
@@ -109,7 +109,7 @@ body, head {
 }
 
 #PrimaryDomainQuiz
-{   height:185%;
+{   height:190%;
     align:center;
     background: linear-gradient(132deg,	white, #00BFFF, white, #F0F8FF);
     background-size: 400% 400%;
@@ -121,7 +121,7 @@ body, head {
       50% {background-position: 100% 50%;}
     }
 #WomenInTech{
-    height: 430%;
+    height: 450%;
     color:navy;
     background: linear-gradient(132deg,	#d4f0fc, #F0F8FF,	#02a9f7, #1E90FF);
     background-size: 400% 400%;
@@ -134,7 +134,7 @@ body, head {
 
   }
 #InspirationalQuotes{
-    height:150%;
+    height:160%;
     background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
@@ -146,7 +146,7 @@ body, head {
 
   }
 #Entertainment{
-    height:250%;
+    height:270%;
     background: linear-gradient(132deg,	#d4f0fc,#00BFFF, #F0F8FF,	#02a9f7, #1E90FF);
     background-size: 400% 400%;
     animation: backgroundG 10s ease infinite;
